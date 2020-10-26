@@ -1,0 +1,21 @@
+-Xajruntimetarget:1.5
+-encoding
+UTF-8
+-showWeaveInfo
+-source
+11
+-target
+11
+-classpath
+C:\Users\Mateusz Samluk\.m2\repository\org\aspectj\aspectjrt\1.9.6\aspectjrt-1.9.6.jar;D:\Projects\UCZELNIA\MiIAB\zad2\target\classes
+-d
+D:\Projects\UCZELNIA\MiIAB\zad2\target\classes
+-s
+D:\Projects\UCZELNIA\MiIAB\zad2\target\generated-sources\aspectj-maven-plugin
+D:\Projects\UCZELNIA\MiIAB\zad2\src\main\java\app\IllegalArgumentException.java
+D:\Projects\UCZELNIA\MiIAB\zad2\src\main\java\app\Main.java
+D:\Projects\UCZELNIA\MiIAB\zad2\src\main\java\app\NotNullArgs.java
+D:\Projects\UCZELNIA\MiIAB\zad2\src\main\java\app\NotNullArgsA.java
+D:\Projects\UCZELNIA\MiIAB\zad2\src\main\java\app\PubliusLogger.java
+D:\Projects\UCZELNIA\MiIAB\zad2\src\main\java\app\PubliusLoggerA.java
+D:\Projects\UCZELNIA\MiIAB\zad2\src\main\java\app\UserService.java
