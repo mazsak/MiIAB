@@ -9,7 +9,6 @@ public class NotNullArgsA {
 
     @Around("@annotation(NotNullArgs)")
     public void notNullArgs(ProceedingJoinPoint joinPoint) throws IllegalArgumentException {
-        System.out.println("jetsem");
         Object[] args = joinPoint.getArgs();
         for (int i = 0; i < args.length; i++){
             if (args[i] == null){

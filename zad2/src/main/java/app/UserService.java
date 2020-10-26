@@ -1,20 +1,24 @@
 package app;
 
-@PubliusLogger
+import java.util.ArrayList;
+import java.util.List;
+
+@PublicLogger(name = "UserServiceLogger")
 public class UserService {
 
-    public boolean verify(String username, String pasword){
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println("app.UserService.verify called");
-        return false;
+    private List<User> users;
+
+    public UserService() {
+        this.users = new ArrayList<>();
     }
 
     @NotNullArgs
+    public void verify(String username, String password) {
+        System.out.println("app.UserService.verify called");
+    }
+
     public void addUser(String username, String password, String email) {
+        users.add(new User(username,password, email));
         System.out.println("app.UserService.add called");
     }
 }
