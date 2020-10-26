@@ -1,0 +1,209 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.9.6 built on Tuesday Jul 21, 2020 at 13:30:08 PDT
+---- Dump Properties ---
+Dump file: ajcore.20201013.171740.834.txt
+Dump reason: java.lang.NullPointerException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+java.lang.NullPointerException
+	at org.aspectj.weaver.patterns.DeclareParents.<init>(DeclareParents.java:49)
+	at org.aspectj.weaver.patterns.DeclareParents.<init>(DeclareParents.java:41)
+	at org.aspectj.weaver.bcel.AtAjAttributes.handleDeclareParentsAnnotation(AtAjAttributes.java:732)
+	at org.aspectj.weaver.bcel.AtAjAttributes.readAj5ClassAttributes(AtAjAttributes.java:386)
+	at org.aspectj.weaver.bcel.BcelObjectType.ensureAspectJAttributesUnpacked(BcelObjectType.java:395)
+	at org.aspectj.weaver.bcel.BcelObjectType.<init>(BcelObjectType.java:162)
+	at org.aspectj.weaver.bcel.BcelWorld.buildBcelDelegate(BcelWorld.java:410)
+	at org.aspectj.weaver.bcel.BcelWorld.addSourceObjectType(BcelWorld.java:491)
+	at org.aspectj.weaver.bcel.BcelWorld.addSourceObjectType(BcelWorld.java:453)
+	at org.aspectj.weaver.bcel.BcelWeaver.addClassFile(BcelWeaver.java:455)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.weaveQueuedEntries(AjPipeliningCompilerAdapter.java:506)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.queueForWeaving(AjPipeliningCompilerAdapter.java:447)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.afterProcessing(AjPipeliningCompilerAdapter.java:432)
+	at org.aspectj.ajdt.internal.compiler.CompilerAdapter.ajc$after$org_aspectj_ajdt_internal_compiler_CompilerAdapter$5$6b855184(CompilerAdapter.aj:104)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:943)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.processCompiledUnits(Compiler.java:576)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:476)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:427)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1107)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:276)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:189)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:114)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:371)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:248)
+	at org.codehaus.mojo.aspectj.AbstractAjcCompiler.execute(AbstractAjcCompiler.java:551)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:956)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
+---- System Properties ---
+sun.desktop=windows
+awt.toolkit=sun.awt.windows.WToolkit
+java.specification.version=11
+sun.cpu.isalist=amd64
+sun.jnu.encoding=Cp1250
+java.class.path=F:\Programs\Toolbox\apps\IDEA-U\ch-0\193.6494.35\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar
+java.vm.vendor=JetBrains s.r.o
+sun.arch.data.model=64
+user.variant=
+java.vendor.url=https://www.jetbrains.com/
+user.timezone=Europe/Belgrade
+maven.conf=F:\Programs\Toolbox\apps\IDEA-U\ch-0\193.6494.35\plugins\maven\lib\maven3/conf
+os.name=Windows 10
+java.vm.specification.version=11
+sun.java.launcher=SUN_STANDARD
+user.country=PL
+sun.boot.library.path=F:\Programs\Toolbox\apps\IDEA-U\ch-0\193.6494.35\jbr\bin
+sun.java.command=org.codehaus.classworlds.Launcher -Didea.version2019.3.3 com.github.m50d:aspectj-maven-plugin:1.11.1:compile
+jdk.debug=release
+maven.home=F:\Programs\Toolbox\apps\IDEA-U\ch-0\193.6494.35\plugins\maven\lib\maven3
+sun.cpu.endian=little
+user.home=C:\Users\Mazsak
+user.language=pl
+java.specification.vendor=Oracle Corporation
+java.version.date=2019-10-15
+java.home=F:\Programs\Toolbox\apps\IDEA-U\ch-0\193.6494.35\jbr
+file.separator=\
+java.vm.compressedOopsMode=Zero based
+line.separator=
+
+java.specification.name=Java Platform API Specification
+java.vm.specification.vendor=Oracle Corporation
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+user.script=
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+java.runtime.version=11.0.5+10-b520.38
+user.name=Mazsak
+path.separator=;
+os.version=10.0
+java.runtime.name=OpenJDK Runtime Environment
+file.encoding=UTF-8
+guice.disable.misplaced.annotation.check=true
+java.vm.name=OpenJDK 64-Bit Server VM
+maven.ext.class.path=F:\Programs\Toolbox\apps\IDEA-U\ch-0\193.6494.35\plugins\maven\lib\maven-event-listener.jar
+java.vendor.url.bug=https://youtrack.jetbrains.com
+java.io.tmpdir=C:\Users\Mazsak\AppData\Local\Temp\
+java.version=11.0.5
+user.dir=F:\Projects\UCZELNIA\MiIAB\aspectexample
+os.arch=amd64
+maven.multiModuleProjectDirectory=F:\Projects\UCZELNIA\MiIAB\aspectexample
+java.vm.specification.name=Java Virtual Machine Specification
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+sun.os.patch.level=
+idea.version2019.3.3=true
+java.library.path=F:\Programs\Toolbox\apps\IDEA-U\ch-0\193.6494.35\jbr\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;F:\Programs\VulkanSDK\1.2.148.1\Bin;F:\Programs\Amazon Corretto\jdk1.8.0_265\bin;C:\Python38\Scripts\;C:\Python38\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\Programs\nodejs\;C:\ProgramData\chocolatey\bin;F:\Programs\Git\cmd;C:\Users\Mazsak\AppData\Local\Microsoft\WindowsApps;C:\Users\Mazsak\AppData\Local\atom\bin;C:\Users\Mazsak\AppData\Roaming\npm;.
+java.vendor=JetBrains s.r.o
+java.vm.info=mixed mode
+java.vm.version=11.0.5+10-b520.38
+classworlds.conf=F:\Programs\Toolbox\apps\IDEA-U\ch-0\193.6494.35\plugins\maven\lib\maven3\bin\m2.conf
+sun.io.unicode.encoding=UnicodeLittle
+java.class.version=55.0
+---- Command Line ---
+-Xajruntimetarget:1.5
+-encoding
+UTF-8
+-showWeaveInfo
+-source
+11
+-target
+11
+-classpath
+C:\Users\Mazsak\.m2\repository\org\aspectj\aspectjrt\1.9.6\aspectjrt-1.9.6.jar;F:\Projects\UCZELNIA\MiIAB\aspectexample\target\classes
+-d
+F:\Projects\UCZELNIA\MiIAB\aspectexample\target\classes
+-s
+F:\Projects\UCZELNIA\MiIAB\aspectexample\target\generated-sources\aspectj-maven-plugin
+F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\Application.java
+F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\Aspect1.java
+F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\Aspect2.java
+F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\Aspect3.java
+F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\Intercepted.java
+F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\model\Person.java
+F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\services\UserService.java
+---- Full Classpath ---
+F:\Programs\Toolbox\apps\IDEA-U\ch-0\193.6494.35\jbr\lib\jrt-fs.jar(106277 bytes)
+C:\Users\Mazsak\.m2\repository\org\aspectj\aspectjrt\1.9.6\aspectjrt-1.9.6.jar(121746 bytes)
+F:\Projects\UCZELNIA\MiIAB\aspectexample\target\classes(2 entries)
+---- Compiler Messages ---
+info Pipelining compilation
+info compiling F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\Aspect1.java
+info compiling F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\Aspect2.java
+info compiling F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\Aspect3.java
+error at (no source information available)
+F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\Aspect3.java:0::0 Internal compiler error: java.lang.NullPointerException at org.aspectj.weaver.patterns.DeclareParents.<init>(DeclareParents.java:49)
+error at public class Aspect3 {
+             ^^^^^^
+F:\Projects\UCZELNIA\MiIAB\aspectexample\src\main\java\app\Aspect3.java:11:0::0 Invalid type pattern'..*.*Service' : '.'@0:0
+abort ABORT -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.patterns.DeclareParents.<init>(DeclareParents.java:49)
+	at org.aspectj.weaver.patterns.DeclareParents.<init>(DeclareParents.java:41)
+	at org.aspectj.weaver.bcel.AtAjAttributes.handleDeclareParentsAnnotation(AtAjAttributes.java:732)
+	at org.aspectj.weaver.bcel.AtAjAttributes.readAj5ClassAttributes(AtAjAttributes.java:386)
+	at org.aspectj.weaver.bcel.BcelObjectType.ensureAspectJAttributesUnpacked(BcelObjectType.java:395)
+	at org.aspectj.weaver.bcel.BcelObjectType.<init>(BcelObjectType.java:162)
+	at org.aspectj.weaver.bcel.BcelWorld.buildBcelDelegate(BcelWorld.java:410)
+	at org.aspectj.weaver.bcel.BcelWorld.addSourceObjectType(BcelWorld.java:491)
+	at org.aspectj.weaver.bcel.BcelWorld.addSourceObjectType(BcelWorld.java:453)
+	at org.aspectj.weaver.bcel.BcelWeaver.addClassFile(BcelWeaver.java:455)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.weaveQueuedEntries(AjPipeliningCompilerAdapter.java:506)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.queueForWeaving(AjPipeliningCompilerAdapter.java:447)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.afterProcessing(AjPipeliningCompilerAdapter.java:432)
+	at org.aspectj.ajdt.internal.compiler.CompilerAdapter.ajc$after$org_aspectj_ajdt_internal_compiler_CompilerAdapter$5$6b855184(CompilerAdapter.aj:104)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:943)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.processCompiledUnits(Compiler.java:576)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:476)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:427)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1107)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:276)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:189)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:114)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:371)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:248)
+	at org.codehaus.mojo.aspectj.AbstractAjcCompiler.execute(AbstractAjcCompiler.java:551)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:956)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
+
